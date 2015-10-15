@@ -8,8 +8,6 @@ from aiohttp_jinja2 import setup as jinja2_setup, template, render_template
 from jinja2 import FileSystemLoader
 from aiohttp.web import Response
 
-import pdb
-
 @coroutine
 def get_name(request):
     context = {'name': request.match_info.get('name', 'Anonymous')}
