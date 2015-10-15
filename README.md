@@ -16,4 +16,4 @@
 
 * $python app.py
 
-** Please note it's Python3.4.4  **
+**Please note it's Python3.4.4**
