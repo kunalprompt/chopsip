@@ -1,4 +1,4 @@
-## chopsip
+## kasync
 
 ### Inroduction to AsyncIO and Aiohttp
 
@@ -14,6 +14,6 @@
 
 #### Running app locally
 
-* $python app.py *
+* $python app.py
 
-*_ Please note it's Python3.4.4  _*
+** Please note it's Python3.4.4  **
