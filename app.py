@@ -1,6 +1,7 @@
 from asyncio import coroutine, get_event_loop
 from sys import stderr
 from json import dumps
+from os import environ
 
 from aiohttp.web import Application
 from aiohttp_jinja2 import setup as jinja2_setup, template, render_template
@@ -37,7 +38,7 @@ def init(loop):
     app.router.add_route('POST', '/post', post_name)
 
     host = '0.0.0.0'
-    port = 8000
+    port = environ.get('PORT', 8000)
     srv = yield from loop.create_server(app.make_handler(), host, port)
     print('Server started at http://{0}:{1}'.format(host, port))
     return srv
